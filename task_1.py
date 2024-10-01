@@ -1,13 +1,13 @@
-import math
+from math import sin, log, cos
 
 # Визначаємо функцію для обчислення
 def calculate_function(x):
     if x < 0.2:
-        return math.log(3 * x + 1, 5)
+        return log(3 * x + 1, 5)
     elif 0.2 <= x < 0.4:
-        return x ** math.cos(x)
+        return x ** cos(x)
     elif x >= 0.4:
-        return 1 / math.sin(math.log(x))
+        return 1 / sin(log(x))
 
 # Основні параметри
 a = 0.1  # початок проміжку
